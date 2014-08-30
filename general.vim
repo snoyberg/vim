@@ -8,7 +8,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 
 syntax on
 if has("gui_running")
-	set guifont=Liberation\ Mono\ 14
+	set guifont=Liberation\ Mono\ 10
 endif
 
 autocmd FileType make setlocal noexpandtab
@@ -22,7 +22,7 @@ autocmd FileType html source ~/.vim/html.vim
 au BufNewFile,BufRead *.md  setfiletype markdown
 
 map <F5> :make
-set makeprg=/home/ubuntu/.cabal/bin/cabal\ build
+set makeprg=cabal\ build
 
 map <F6> :%!stylish-haskell
 
